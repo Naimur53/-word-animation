@@ -1,0 +1,53 @@
+/*
+    defult :  font-family:popin !!!
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+a{
+    text-decoration:none;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-color: black;
+    
+}
+.content{
+    position:relative;
+}
+.content h2{
+    position:absolute;
+      
+    transform:translate(-50%,-50%);
+    font-size:8em;
+}
+.content h2:nth-child(1){
+    color:transparent;
+    -webkit-text-stroke:2px #03e9f4;
+}
+.content h2:nth-child(2){
+    color:#03e9f4;
+   animation:animate 4s alternate infinite;
+}
+@keyframes animate{
+    from{
+
+        clip-path: polygon(0% 49%, 12% 41%, 25% 39%, 39% 43%, 50% 52%, 62% 57%, 76% 57%, 86% 53%, 92% 47%, 100% 44%, 100% 100%, 0 100%);
+    }
+    to{
+        clip-path: polygon(0 58%, 9% 52%, 23% 51%, 33% 54%, 46% 54%, 58% 48%, 70% 45%, 79% 42%, 93% 41%, 100% 47%, 100% 100%, 0 100%);
+    }
+
+}
