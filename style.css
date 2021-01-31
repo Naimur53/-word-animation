@@ -39,7 +39,7 @@ body{
 }
 .content h2:nth-child(2){
     color:#03e9f4;
-   animation:animate 4s alternate infinite;
+   animation:animate 4s alternate ease-in-out infinite;
 }
 @keyframes animate{
     from{
